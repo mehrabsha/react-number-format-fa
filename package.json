@@ -1,19 +1,15 @@
 {
-  "name": "react-number-format",
-  "description": "React component to format number in an input or as a text.",
-  "version": "4.6.4",
+  "name": "react-number-format-fa",
+  "description": "React component to format number in an input or as a text. (support persian and arabic digits)",
+  "version": "4.6.3",
   "main": "dist/react-number-format.cjs.js",
   "module": "dist/react-number-format.es.js",
-  "author": "Sudhanshu Yadav",
+  "author": "Mehrab Shayesteh",
   "license": "MIT",
   "types": "typings/number_format.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/s-yadav/react-number-format"
-  },
-  "bugs": {
-    "mail": "sudhanshuyadav2@gmail.com",
-    "url": "https://github.com/s-yadav/react-number-format/issues"
+    "url": "https://github.com/mehrabsha/react-number-format-fa"
   },
   "keywords": [
     "react-component",

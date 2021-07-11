@@ -807,7 +807,18 @@ class NumberFormat extends React.Component {
 
   onChange(e: SyntheticInputEvent) {
     const el = e.target;
+
+    try {
+      let elVal = el.value;
+      const p2e = (s) => s.replace(/[۰-۹]/g, (d) => '۰۱۲۳۴۵۶۷۸۹'.indexOf(d));
+      const a2p = (s) => s.replace(/[٠-٩]/g, (d) => '۰۱۲۳۴۵۶۷۸۹'['٠١٢٣٤٥٦٧٨٩'.indexOf(d)]);
+      elVal = p2e(a2p(elVal));
+      el.value = elVal;
+    // eslint-disable-next-line no-empty
+    } catch(e) { }
+
     let inputValue = el.value;
+
     const { state, props } = this;
     const { isAllowed } = props;
     const lastValue = state.value || '';
